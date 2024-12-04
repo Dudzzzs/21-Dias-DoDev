@@ -1,0 +1,6 @@
+let entradaDeDados = prompt ('Insira sua idade')
+console.log(entradaDeDados)
+console.log("======== ParseInt ========")
+console.log(parseInt(entradaDeDados))
+console.log('======== Number ========')
+console.log(Number(entradaDeDados))
