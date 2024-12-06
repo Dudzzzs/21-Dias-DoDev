@@ -23,12 +23,12 @@ temCnh = false
 temCarro = false
 
 // pedindo informações
-opcaoCnh = prompt('Você possui CNH? (Sim ou Não)')
+let opcaoCnh = prompt('Você possui CNH? (Sim ou Não)')
 if(opcaoCnh === "Sim"){
     temCnh = true
 }
 
-opcaoCarro = prompt('Você possui veículo próprio? (Sim ou Não)')
+let opcaoCarro = prompt('Você possui veículo próprio? (Sim ou Não)')
 if(opcaoCarro === 'Sim'){
     temCarro = true
 }
