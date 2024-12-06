@@ -17,19 +17,27 @@ if(fome === 'Sim' && dinheiro === 'Sim' && restaurante === 'Sim')
 // Exercício dia 04 - Segunda parte
 console.log('SEGUNDA PARTE')
 
-let nome2 = prompt('Digite seu nome (Exercício 2')
-let idade2 = Number(prompt('Digite sua idade (Exercício 2)'))
-let temCnh = false
-let temCarro = false
+nome2 = prompt('Digite seu nome: (Exercício 2)')
+idade2 = Number(prompt('Digite sua idade: '))
+temCnh = false
+temCarro = false
 
 // pedindo informações
-let opcaoCnh = prompt('Você tem CNH? (Sim ou Não)')
-if(opcaoCnh = 'Sim'){
+opcaoCnh = prompt('Você possui CNH? (Sim ou Não)')
+if(opcaoCnh === "Sim"){
     temCnh = true
 }
-let opcaoCarro = prompt('Você tem veiculo próprio? (Sim ou não)')
-if(opcaoCarro = 'Sim'){
+
+opcaoCarro = prompt('Você possui veículo próprio? (Sim ou Não)')
+if(opcaoCarro === 'Sim'){
     temCarro = true
 }
-
  // Exibindo mensagem no console
+ if (idade2 < 18 || !temCnh){console.log("Olá " + nome2 + ', você não pode dirigir!')
+ }
+else if (idade2 >= 18 && temCnh && !temCarro)
+    {console.log ('Olá ' + nome2 + ', você pode dirigir mas não tem carro!')    
+    }
+    else{console.log('Olá ' + nome2 + ', você será o motorista!')
+    }
+
